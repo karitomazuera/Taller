@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolos y Estándares - Servicios Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: #111827;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #22d3ee;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #22d3ee;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #67e8f9;
+      margin-top: 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #334155;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #22d3ee;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+      text-align: justify;
+      margin-bottom: 0;
+    }
+    li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+      text-align: justify;
+      margin-bottom: 8px;
+    }
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .back-button {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header p {
+      text-align: center;
+      color: #a3a3a3;
+      font-style: italic;
+    }
+    .protocol-icon {
+      font-size: 1.8rem;
+      color: #22d3ee;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+    .protocol-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Protocolos y Estándares</h1>
+      <p>Principales protocolos y estándares relacionados con servicios web</p>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">🌐</span>
+          <h2>HTTP (Hypertext Transfer Protocol)</h2>
+        </div>
+        <ul>
+          <li>Es el protocolo de comunicación más utilizado en la web.</li>
+          <li>En servicios web se emplea para transmitir mensajes entre cliente y servidor.</li>
+          <li>Funciona bajo un modelo request-response (solicitud-respuesta).</li>
+          <li>Generalmente opera sobre el puerto 80 (HTTP) o 443 (HTTPS) para comunicaciones seguras.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">📄</span>
+          <h2>XML (Extensible Markup Language)</h2>
+        </div>
+        <ul>
+          <li>Lenguaje de marcado diseñado para estructurar y transportar datos de manera legible tanto para humanos como para máquinas.</li>
+          <li>Muy usado en SOAP y WSDL porque permite representar datos con etiquetas personalizadas.</li>
+          <li><strong>REST (Representational State Transfer):</strong> basado en recursos accesibles mediante URLs y con datos en JSON o XML.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">🔤</span>
+          <h2>JSON (JavaScript Object Notation)</h2>
+        </div>
+        <ul>
+          <li>Formato ligero de intercambio de datos basado en la sintaxis de JavaScript.</li>
+          <li>Se usa ampliamente en APIs REST por ser más compacto, rápido y fácil de procesar que XML.</li>
+          <li>Estructura simple de pares clave-valor que facilita su lectura y escritura.</li>
+          <li>Compatible con la mayoría de lenguajes de programación modernos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">📝</span>
+          <h2>WSDL (Web Services Description Language)</h2>
+        </div>
+        <ul>
+          <li>Lenguaje basado en XML que describe las funcionalidades de un servicio web.</li>
+          <li>Define qué operaciones ofrece un servicio.</li>
+          <li>Define qué mensajes intercambia.</li>
+          <li>Define dónde se encuentra el servicio (endpoint).</li>
+          <li>Es fundamental en servicios SOAP, ya que actúa como un contrato formal entre cliente y servidor.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">📚</span>
+          <h2>UDDI (Universal Description, Discovery, and Integration)</h2>
+        </div>
+        <ul>
+          <li>Estándar que funciona como un registro de servicios web.</li>
+          <li>Permite a las organizaciones publicar, buscar e integrar servicios web.</li>
+          <li>Se basa en XML y fue promovido por OASIS y empresas como IBM y Microsoft.</li>
+          <li>Aunque hoy en día ha perdido fuerza frente a directorios de APIs modernos, fue clave en la evolución de SOA.</li>
+          <li>Funcionaba como un "directorio telefónico" para servicios web empresariales.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">🔒</span>
+          <h2>SOAP (Simple Object Access Protocol)</h2>
+        </div>
+        <ul>
+          <li>Protocolo de comunicación para servicios web basado en XML.</li>
+          <li>Define un formato estricto para el intercambio de mensajes estructurados.</li>
+          <li>Incluye especificaciones para seguridad (WS-Security) y transacciones.</li>
+          <li>Utiliza WSDL para describir sus interfaces y operaciones.</li>
+          <li>Ideal para entornos empresariales que requieren alto nivel de seguridad y confiabilidad.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="protocol-title">
+          <span class="protocol-icon">⚡</span>
+          <h2>REST (Representational State Transfer)</h2>
+        </div>
+        <ul>
+          <li>Estilo arquitectónico para diseñar servicios web escalables y ligeros.</li>
+          <li>Utiliza los métodos HTTP estándar: GET, POST, PUT, DELETE, PATCH.</li>
+          <li>No tiene estado (stateless): cada petición contiene toda la información necesaria.</li>
+          <li>Los recursos se identifican mediante URLs únicas.</li>
+          <li>Prefiere formatos ligeros como JSON sobre XML.</li>
+          <li>Ampliamente adoptado en APIs modernas y aplicaciones móviles.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Botón Regresar -->
+    <div class="text-center back-button">
+      <a href="Servicios_Web.html" class="btn btn-info btn-lg">⮌ Regresar</a>
+    </div>
+  </div>
+</body>
+</html>

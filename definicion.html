@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definición y Conceptos Clave - Servicios Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: #111827;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #22d3ee;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #22d3ee;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #67e8f9;
+      margin-top: 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #334155;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #22d3ee;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+      text-align: justify;
+      margin-bottom: 0;
+    }
+    li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+      text-align: justify;
+      margin-bottom: 8px;
+    }
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .back-button {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header p {
+      text-align: center;
+      color: #a3a3a3;
+      font-style: italic;
+    }
+    .concept-icon {
+      font-size: 1.8rem;
+      color: #22d3ee;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+    .concept-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .footer {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #1e293b;
+      border-top: 1px solid #334155;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-line {
+      margin: 0;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+    }
+    .footer-highlight {
+      color: #67e8f9;
+      font-weight: bold;
+    }
+    .footer-divider {
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #22d3ee, transparent);
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Definición y Conceptos Clave</h1>
+      <p>Fundamentos esenciales de los servicios web y su arquitectura</p>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">🔗</span>
+          <h2>Interoperabilidad</h2>
+        </div>
+        <p>Capacidad de que aplicaciones heterogéneas (Java, .NET, Python, etc.) trabajen juntas, se logra gracias al uso de protocolos y formatos de datos estándar.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">📡</span>
+          <h2>Protocolos de Comunicación</h2>
+        </div>
+        <ul>
+          <li><strong>HTTP/HTTPS:</strong> los más comunes, usados en la web.</li>
+          <li><strong>SOAP (Simple Object Access Protocol):</strong> basado en XML, usado en servicios más estructurados.</li>
+          <li><strong>REST (Representational State Transfer):</strong> basado en recursos accesibles mediante URLs y con datos en JSON o XML.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">📊</span>
+          <h2>Formatos de Datos</h2>
+        </div>
+        <ul>
+          <li><strong>XML (Extensible Markup Language):</strong> usado en SOAP y en descripciones WSDL.</li>
+          <li><strong>JSON (JavaScript Object Notation):</strong> más ligero, ampliamente usado en APIs REST.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">📝</span>
+          <h2>WSDL (Web Services Description Language)</h2>
+        </div>
+        <ul>
+          <li>Lenguaje basado en XML que describe qué operaciones ofrece un servicio web, qué mensajes intercambia y cómo invocarlo.</li>
+          <li>Aplica principalmente en servicios SOAP.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">📚</span>
+          <h2>UDDI (Universal Description, Discovery, and Integration)</h2>
+        </div>
+        <ul>
+          <li>Directorio que permite registrar y buscar servicios web disponibles en la red.</li>
+          <li>Funciona como "páginas amarillas" para servicios.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">🔌</span>
+          <h2>API (Application Programming Interface)</h2>
+        </div>
+        <ul>
+          <li>Interfaz que define cómo las aplicaciones pueden comunicarse entre sí.</li>
+          <li>Una API puede estar expuesta como un servicio web.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">🏗️</span>
+          <h2>SOA (Service-Oriented Architecture)</h2>
+        </div>
+        <ul>
+          <li>Arquitectura que organiza los sistemas en servicios independientes que se pueden combinar y reutilizar.</li>
+          <li>Los servicios web son la tecnología más usada para implementar SOA.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">🔄</span>
+          <h2>Cliente y Servidor en Servicios Web</h2>
+        </div>
+        <ul>
+          <li><strong>Servidor:</strong> ofrece el servicio (ejemplo: consulta de clima).</li>
+          <li><strong>Cliente:</strong> lo consume (ejemplo: una app móvil que muestra el pronóstico).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">⚖️</span>
+          <h2>Estado (Stateful vs Stateless)</h2>
+        </div>
+        <ul>
+          <li><strong>Stateless:</strong> cada petición es independiente (REST).</li>
+          <li><strong>Stateful:</strong> se mantiene el estado de la sesión entre cliente y servidor (algunos SOAP).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="concept-title">
+          <span class="concept-icon">🔒</span>
+          <h2>Seguridad en Servicios Web</h2>
+        </div>
+        <ul>
+          <li><strong>HTTPS:</strong> cifrado en la comunicación.</li>
+          <li><strong>Autenticación y autorización:</strong> tokens, API keys, OAuth.</li>
+          <li><strong>WS-Security:</strong> estándar de seguridad para SOAP.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Botón Regresar -->
+    <div class="text-center back-button">
+      <a href="Servicios_Web.html" class="btn btn-info btn-lg">⮌ Regresar</a>
+    </div>
+
+  </div>
+</body>
+</html>

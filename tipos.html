@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de Servicios Web - Conceptos Clave</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: #111827;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #22d3ee;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #22d3ee;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #67e8f9;
+      margin-top: 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #334155;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+      text-align: justify;
+      margin-bottom: 0;
+    }
+    li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+      text-align: justify;
+      margin-bottom: 8px;
+    }
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .back-button {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header p {
+      text-align: center;
+      color: #a3a3a3;
+      font-style: italic;
+    }
+    .service-icon {
+      font-size: 1.8rem;
+      color: #22d3ee;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+    .service-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    .comparison-table th, .comparison-table td {
+      border: 1px solid #334155;
+      padding: 12px;
+      text-align: left;
+    }
+    .comparison-table th {
+      background-color: #1e293b;
+      color: #67e8f9; /* Mismo color que los títulos h2 */
+      font-weight: bold;
+    }
+    .comparison-table td {
+      color: #67e8f9; /* Texto con mayor contraste, mismo color que títulos */
+      background-color: #1a2437;
+    }
+    .comparison-table tr:nth-child(even) td {
+      background-color: #1e293b;
+    }
+    .soap-color {
+      color: #22d3ee; /* Color para destacar SOAP */
+    }
+    .rest-color {
+      color: #67e8f9; /* Color para destacar REST */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Tipos de Servicios Web</h1>
+      <p>Comparativa entre SOAP y REST: características, ventajas y desventajas</p>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">📨</span>
+          <h2>SOAP (Simple Object Access Protocol)</h2>
+        </div>
+        <ul>
+          <li>Es un protocolo estándar basado en XML que permite a las aplicaciones comunicarse a través de HTTP, SMTP o TCP/IP.</li>
+          <li>Se caracteriza por ser estrictamente estructurado y definido por un contrato (WSDL).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">🔍</span>
+          <h2>Características de SOAP</h2>
+        </div>
+        <ul>
+          <li><strong>Formato:</strong> usa XML para estructurar los mensajes.</li>
+          <li><strong>Contrato:</strong> se describe mediante WSDL (Web Services Description Language).</li>
+          <li><strong>Protocolos de transporte:</strong> aunque comúnmente usa HTTP/HTTPS, también soporta SMTP, FTP, entre otros.</li>
+          <li><strong>Extensibilidad:</strong> soporta estándares como WS-Security para seguridad y transacciones.</li>
+          <li><strong>Acoplamiento fuerte:</strong> cliente y servidor deben compartir un contrato bien definido.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">✅</span>
+          <h2>Ventajas de SOAP</h2>
+        </div>
+        <ul>
+          <li>Alto nivel de seguridad y confiabilidad.</li>
+          <li>Ideal para entornos empresariales complejos.</li>
+          <li>Protocolo estandarizado con especificaciones bien definidas.</li>
+          <li>Soporte para transacciones complejas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">⚠️</span>
+          <h2>Desventajas de SOAP</h2>
+        </div>
+        <ul>
+          <li>Más pesado (usa XML extensivo).</li>
+          <li>Más difícil de implementar en comparación con REST.</li>
+          <li>Mayor consumo de ancho de banda.</li>
+          <li>Curva de aprendizaje más pronunciada.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">🌐</span>
+          <h2>REST (Representational State Transfer)</h2>
+        </div>
+        <ul>
+          <li>Es un estilo arquitectónico definido por Roy Fielding (2000) que se basa en el uso de HTTP y recursos identificados por URLs.</li>
+          <li>Los datos suelen intercambiarse en JSON (más ligero), aunque también se permite XML o texto plano.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">🔍</span>
+          <h2>Características de REST</h2>
+        </div>
+        <ul>
+          <li><strong>Formato:</strong> JSON principalmente, pero soporta XML y otros.</li>
+          <li><strong>Recursos:</strong> cada recurso se identifica con una URL única.</li>
+          <li><strong>Operaciones:</strong> usa los métodos HTTP estándar: GET, POST, PUT/PATCH, DELETE.</li>
+          <li><strong>Stateless:</strong> cada petición es independiente, no guarda estado entre solicitudes.</li>
+          <li><strong>Ligero y flexible:</strong> fácil de usar desde navegadores, apps móviles o microservicios.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">✅</span>
+          <h2>Ventajas de REST</h2>
+        </div>
+        <ul>
+          <li>Rápido, sencillo y ligero.</li>
+          <li>Gran adopción en APIs públicas y móviles.</li>
+          <li>Fácil de aprender e implementar.</li>
+          <li>Mejor rendimiento debido a formatos ligeros como JSON.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">⚠️</span>
+          <h2>Desventajas de REST</h2>
+        </div>
+        <ul>
+          <li>No tiene estándares estrictos de seguridad y mensajería (se suelen añadir con OAuth, HTTPS, JWT).</li>
+          <li>No es tan robusto para transacciones complejas como SOAP.</li>
+          <li>Falta de soporte nativo para operaciones transaccionales.</li>
+          <li>Puede requerir más peticiones para operaciones complejas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="service-title">
+          <span class="service-icon">📊</span>
+          <h2>Comparativa SOAP vs REST</h2>
+        </div>
+        <table class="comparison-table">
+          <tr>
+            <th>Aspecto</th>
+            <th>SOAP</th>
+            <th>REST</th>
+          </tr>
+          <tr>
+            <td>Formato de datos</td>
+            <td class="soap-color">XML</td>
+            <td class="rest-color">JSON, XML, texto plano</td>
+          </tr>
+          <tr>
+            <td>Protocolo</td>
+            <td class="soap-color">HTTP, SMTP, TCP/IP</td>
+            <td class="rest-color">Principalmente HTTP/HTTPS</td>
+          </tr>
+          <tr>
+            <td>Rendimiento</td>
+            <td class="soap-color">Más lento (mensajes pesados)</td>
+            <td class="rest-color">Más rápido (mensajes ligeros)</td>
+          </tr>
+          <tr>
+            <td>Seguridad</td>
+            <td class="soap-color">WS-Security integrado</td>
+            <td class="rest-color">Requiere implementación adicional</td>
+          </tr>
+          <tr>
+            <td>Complejidad</td>
+            <td class="soap-color">Alta</td>
+            <td class="rest-color">Baja</td>
+          </tr>
+          <tr>
+            <td>Uso ideal</td>
+            <td class="soap-color">Sistemas empresariales complejos</td>
+            <td class="rest-color">APIs web y móviles</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Botón Regresar -->
+    <div class="text-center back-button">
+      <a href="Servicios_Web.html" class="btn btn-info btn-lg">⮌ Regresar</a>
+    </div>
+  </div>
+</body>
+</html>
